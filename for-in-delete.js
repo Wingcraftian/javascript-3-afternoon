@@ -39,8 +39,14 @@
   Inside the function showValues, write a for in loop that concatenates each of the property values and returns the concatenated string.
 */
 
+
 function showValues( obj ) {
-  //Code Here
+  var string = "";
+  for(var key in obj){
+   string+=obj[key]
+    
+  }
+  return string
 }
 
 
@@ -49,12 +55,25 @@ function showValues( obj ) {
 
 /*
   Write a function called greaterThan10 that takes in an object. 
-  Write a for in loop that loops over the object and changes any value that is great than 10 to 0. 
+  Write a for in loop that loops over the object and changes any value that is greater than 10 to 0. 
   Return the updated object.
 */
 
-//Code Here
-
+function greaterThan10(obj){
+  
+  for(var key in obj){
+    if(obj[key] > 10){
+      obj[key] = 0;
+      
+    }
+   
+  } return(obj)
+}
+// function greaterThan10(obj){
+//   let newArray = users.filter(obj[key]>10){
+//     obj
+//   }
+// }
 
 
 ////////// PROBLEM 3 //////////
